@@ -67,7 +67,6 @@ public class EnemyTracker {
     protected double calculateAbsoluteOrientationToEnemy (Coordinate myLocation,
                                                           Coordinate enemyLocation) {
 
-        // TODO: make this method a bit cleaner
         double xDelta = enemyLocation.getX() - myLocation.getX();
         double yDelta = enemyLocation.getY() - myLocation.getY();
         double arctangent = Math.atan(yDelta / xDelta) * 180 / Math.PI;
